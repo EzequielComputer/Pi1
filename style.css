@@ -1,3 +1,5 @@
+
+/* Início do CSS da página de login operador*/
 *{
     margin: 0;
     padding: 0;
@@ -98,3 +100,33 @@
 .content-box .form-box .input-box p a:hover{
     color: #3286ca;
 }
+
+/* Fim do CSS da página de login operador*/
+
+/*Inicio css área de selecionar operador e requisitante */
+
+.container{
+    background-color: #32324f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    background-color:#4aa4ee;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+.container p{ 
+    font-size: 25px;
+    ;
+}
+
+
