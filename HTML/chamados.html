@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo chamado</title>
+    <link rel="stylesheet" href="chamados.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="ContainerPrincipal">
+        <header class="cabecario">
+            <img src="logo.png" alt="logo">
+            <h4 id="operador">Operador</h4>
+        </header>
+
+        <div class="principal">
+
+            <div class="menu">
+                <a id="home" href="layout.html">
+                    <span id="home" class="material-symbols-outlined">home</span>
+                </a>
+
+                <a id="adicionar" href="chamados.html">
+                    <span class="material-symbols-outlined">add_circle</span>
+                </a>
+
+                <a id="documentos" href="#">
+                    <span class="material-symbols-outlined">folder</span>
+                </a>
+
+                <a id="sair" href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                </a>
+            </div>
+
+            <div class="areachamados">
+                    <div class="containeresquerda">
+                        <form action=""></form>
+                            <p>N° do chamado</p>
+                                <input type="text" name="nchamado" id="nchamado">
+                            <p>Equipamento</p>
+                                <select name="equipamentos" id="equipamentos">
+                                    <option value="camera">Câmera</option>
+                                    <option value="controladora">Controladora</option>
+                                    <option value="tv">TV</option>
+                                    <option value="computador">Computador</option>
+                                    <option value="alarme">Alarme</option>
+                                    <option value="antena">Antena</option>
+                                    <option value="toten">Toten</option>
+                                    <option value="catraca">Catraca</option>
+                                    <option value="cancela">Cancela</option>
+                                    <option value="torniquete">Torniquete</option>
+                                    <option value="interfone">Interfone</option>
+                                </select>
+                            <p>IP/Identificação</p>
+                                <input type="text" name="identificacao" id="identificacao">
+                            <p>Local</p>
+                                <input type="text" name="local" id="local">
+                        
+                    </div>
+
+                    <div class="containermeio">
+                            <p>Data do problema</p>
+                                <input type="date" name="data" id="data">
+                            <p>Classificação</p>
+                                <select name="classificacao" id="classificacao">
+                                    <option value="preventiva">Manutenção preventiva</option>
+                                    <option value="reativa">Manutenção reativa</option>
+                                    <option value="instalacao">Instalação</option>
+                                    <option value="remocao">Remoção</option>
+                                    <option value="configuracao">Configuração</option>
+                                </select>
+                            <p>Criticabilidade</p>
+                                <input type="radio" name="criticabilidade" id="alto">
+                                    <label for="alto">Alto</label><br>
+                                <input type="radio" name="criticabilidade" id="medio">    
+                                    <label for="medio">Médio</label><br>
+                                <input type="radio" name="criticabilidade" id="baixo">    
+                                    <label for="baixo">Baixo</label><br>     
+                    </div>
+
+                    <div class="containerdireita">
+                            <p>Detalhe o problema abaixo</p>
+                                <textarea name="detalheoproblema" id="detalheoproblema" cols="30" rows="10"></textarea><br>
+                            <input type="submit" value="Enviar">
+                            <button type="button">Cancelar</button>
+                        </form>    
+                    </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>&copy; 2024 - Projeto Integrador - UNIVESP</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

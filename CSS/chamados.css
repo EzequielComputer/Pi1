@@ -1,0 +1,49 @@
+
+@import url(/layout.css);
+
+
+.areachamados{
+    display:flex;
+    /* background-color: aqua; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.containeresquerda{
+    background-color: rgba(137, 43, 226, 0.247);
+    width: 35%;
+    height: 100%;
+}
+
+.containeresquerda input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+.containeresquerda select{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+
+.containermeio{
+    background-color: rgba(64, 57, 70, 0.274);
+    width: 35%;
+    height: 100%;
+}
+
+.containerdireita{
+    background-color: rgb(6, 1, 10);
+    width: 35%;
+    height: 100%;
+}
