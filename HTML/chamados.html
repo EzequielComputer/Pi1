@@ -37,62 +37,67 @@
 
             <div class="areachamados">
                     <div class="containeresquerda">
-                        <form action=""></form>
-                            <p>N° do chamado</p>
-                                <input type="text" name="nchamado" id="nchamado">
-                            <p>Equipamento</p>
-                                <select name="equipamentos" id="equipamentos">
-                                    <option value="camera">Câmera</option>
-                                    <option value="controladora">Controladora</option>
-                                    <option value="tv">TV</option>
-                                    <option value="computador">Computador</option>
-                                    <option value="alarme">Alarme</option>
-                                    <option value="antena">Antena</option>
-                                    <option value="toten">Toten</option>
-                                    <option value="catraca">Catraca</option>
-                                    <option value="cancela">Cancela</option>
-                                    <option value="torniquete">Torniquete</option>
-                                    <option value="interfone">Interfone</option>
-                                </select>
-                            <p>IP/Identificação</p>
-                                <input type="text" name="identificacao" id="identificacao">
-                            <p>Local</p>
-                                <input type="text" name="local" id="local">
-                        
+                        <form action="">
+                            <div class="conteudo">
+                                <p>N° do chamado</p>
+                                    <input type="text" name="nchamado" id="nchamado">
+                                <p>Equipamento</p>
+                                    <select name="equipamentos" id="equipamentos">
+                                        <option value="camera">Câmera</option>
+                                        <option value="controladora">Controladora</option>
+                                        <option value="tv">TV</option>
+                                        <option value="computador">Computador</option>
+                                        <option value="alarme">Alarme</option>
+                                        <option value="antena">Antena</option>
+                                        <option value="toten">Toten</option>
+                                        <option value="catraca">Catraca</option>
+                                        <option value="cancela">Cancela</option>
+                                        <option value="torniquete">Torniquete</option>
+                                        <option value="interfone">Interfone</option>
+                                    </select>
+                                <p>IP/Identificação</p>
+                                    <input type="text" name="identificacao" id="identificacao">
+                                <p>Local</p>
+                                    <input type="text" name="local" id="local">
+                            </div>
                     </div>
 
-                    <div class="containermeio">
-                            <p>Data do problema</p>
-                                <input type="date" name="data" id="data">
-                            <p>Classificação</p>
-                                <select name="classificacao" id="classificacao">
-                                    <option value="preventiva">Manutenção preventiva</option>
-                                    <option value="reativa">Manutenção reativa</option>
-                                    <option value="instalacao">Instalação</option>
-                                    <option value="remocao">Remoção</option>
-                                    <option value="configuracao">Configuração</option>
-                                </select>
-                            <p>Criticabilidade</p>
-                                <input type="radio" name="criticabilidade" id="alto">
-                                    <label for="alto">Alto</label><br>
-                                <input type="radio" name="criticabilidade" id="medio">    
-                                    <label for="medio">Médio</label><br>
-                                <input type="radio" name="criticabilidade" id="baixo">    
-                                    <label for="baixo">Baixo</label><br>     
-                    </div>
+                        <div class="containermeio">
+                            <div class="conteudo">
+                                <p>Data do problema</p>
+                                    <input type="date" name="data" id="data">
+                                <p>Classificação</p>
+                                    <select name="classificacao" id="classificacao">
+                                        <option value="preventiva">Manutenção preventiva</option>
+                                        <option value="reativa">Manutenção reativa</option>
+                                        <option value="instalacao">Instalação</option>
+                                        <option value="remocao">Remoção</option>
+                                        <option value="configuracao">Configuração</option>
+                                    </select>
+                                <p>Criticabilidade</p>
+                                    <input type="radio" name="criticabilidade" class="radio">
+                                        <label for="alto">Alto</label><br>
+                                    <input type="radio" name="criticabilidade" class="radio">    
+                                        <label for="medio">Médio</label><br>
+                                    <input type="radio" name="criticabilidade" class="radio">    
+                                        <label for="baixo">Baixo</label><br> 
+                            </div>    
+                        </div>
 
-                    <div class="containerdireita">
-                            <p>Detalhe o problema abaixo</p>
-                                <textarea name="detalheoproblema" id="detalheoproblema" cols="30" rows="10"></textarea><br>
-                            <input type="submit" value="Enviar">
-                            <button type="button">Cancelar</button>
+                        <div class="containerdireita">
+                            <div class="conteudo">
+                                <p>Detalhe o problema abaixo</p>
+                                    <textarea name="detalheoproblema" id="detalheoproblema" cols="30" rows="10"></textarea><br>
+                                <input type="submit" value="Enviar">
+                                <button type="button">Cancelar</button>
+                            </div>
                         </form>    
-                    </div>
+                        </div>
             </div>
 
         </div>
         <footer>
-            <p>&copy; 2024 - Projeto Integrador - UNIVESP</p>
+            <h6>&copy; 2024 - Projeto Integrador - UNIVESP</h6>
         </footer>
     </div>
     

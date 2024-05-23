@@ -4,16 +4,15 @@
 
 .areachamados{
     display:flex;
-    /* background-color: aqua; */
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-.containeresquerda{
-    background-color: rgba(137, 43, 226, 0.247);
+/* .containeresquerda{
+    background-color: rgb(137, 43, 226);
     width: 35%;
     height: 100%;
-}
+} */
 
 .containeresquerda input{
     width: 70%;
@@ -24,6 +23,7 @@
     color: #32324f;
     background-color: #ecf2f7;
     border-radius: 5px;
+    
 }
 .containeresquerda select{
     width: 70%;
@@ -36,14 +36,98 @@
     border-radius: 5px;
 }
 
-.containermeio{
+/* .containermeio{
     background-color: rgba(64, 57, 70, 0.274);
     width: 35%;
     height: 100%;
+} */
+
+.containermeio input #classificacao, #data{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
 }
 
-.containerdireita{
+.containermeio select{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+
+/* .containerdireita{
     background-color: rgb(6, 1, 10);
     width: 35%;
     height: 100%;
+} */
+
+.containerdireita #detalheoproblema{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+.conteudo{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 420px;
+    
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform:uppercase;
+    color:#32324f;
+    font-weight: bolder;
+    margin-top:15px;
+}
+
+.conteudo input[type=submit]{
+    background-color: #4aa4ee;
+    color: #fff;
+    width: 35%;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 7px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.conteudo input[type=submit]:hover{
+    background-color: #3286ca;
+}
+
+.conteudo button{
+    background-color: #ee4a4a;
+    color: #fff;
+    width: 35%;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 7px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.conteudo button:hover{
+    background-color: #ca3732;
 }
