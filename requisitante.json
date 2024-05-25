@@ -8,5 +8,15 @@
         "email": "univesp@gmail.com",
         "nome": "Univesp",
         "senha": "12345"
+    },
+    {
+        "email": "lira@lira",
+        "nome": "Gabriel",
+        "senha": "12"
+    },
+    {
+        "email": "lira@univesp",
+        "nome": "Lira",
+        "senha": "1234"
     }
 ]

@@ -29,6 +29,14 @@
 
     <form action="/requisitantecadastro" id="cadastrorequisitante"  method="post">
         <h1>Cadastro Requisitante</h1>
+        {% set mensagens = get_flashed_messages()   %}
+        {% if mensagens %}
+        <div id="alerta">
+            {{ mensagens[0] }}
+        </div>
+
+        {% endif %}
+
         <p id="msgErrorequisitante" >AS SENHAS NÃO SÃO IGUAIS!</p>
         <label for="emailrequisitante">Email</label>
         <input type="email" name="emailrequisitante" id="emailrequisitante">
@@ -42,6 +50,7 @@
     </form>
 
     <form action="/cadastrooperador" id="cadastrooperador"  method="post">
+        
         <h1>Cadastro Operador</h1>
         <p id="msgErrooperador" >AS SENHAS NÃO SÃO IGUAIS!</p>
         <label for="emailoperador">Email</label>

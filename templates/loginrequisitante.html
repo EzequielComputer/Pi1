@@ -15,6 +15,14 @@
             <div class="form-box">
                 <h2>Login Requisitante</h2>
                 <form action="acessorequisitante" method="post">
+                    {% set mensagens = get_flashed_messages()   %}
+                    {% if mensagens %}
+                    <div id="alerta">
+                        {{ mensagens[0] }}
+                    </div>
+
+                    {% endif %}
+
                     <div class="input-box">
                         <span>Usuário</span>
                         <input name="usuariorequisitante" type="text" placeholder="Usuário" required> 

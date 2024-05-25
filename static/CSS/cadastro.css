@@ -139,9 +139,15 @@ input[type="text"]{
     font-weight: bold;
     display: none;
 }
+
 #cadastrorequisitante , #cadastrooperador{
     margin-top: 3%;
 }
+
 #cadastrorequisitante , #cadastrooperador{
     display: none; 
+}
+
+#alerta{
+    color: red;
 }

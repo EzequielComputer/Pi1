@@ -37,13 +37,20 @@ def layout():
 #verificação de usuário e senha para requisitante
 @app.route("/acessorequisitante", methods=['POST'])
 def acessorequisitante():
-    usuario = request.form.get('usuariorequisitante')
+    email = request.form.get('usuariorequisitante')
     senha = request.form.get('senharequisitante')
 
-    if usuario == 'grupo10' and senha == '123':
-        return redirect('/layout')
-    else:
-        return redirect('/loginrequisitante')
+    with open('requisitante.json') as requisitante_json:
+        listaDeUsuarios = json.load(requisitante_json)
+        cont = 0
+        for usuario in listaDeUsuarios:
+            cont += 1
+
+            if email == usuario['email'] and senha == usuario['senha']:
+                return redirect('/layout')
+            if cont >= len(listaDeUsuarios):
+                flash('Email ou senha incorretos.')
+                return redirect('/loginrequisitante')
 
 #verificação de usuário e senha para operador 
 
@@ -69,6 +76,10 @@ def requisitantecadastro():
 
     with open('requisitante.json') as requisitante_json:
         listaDeUsuarios = json.load(requisitante_json)
+        for usuario in listaDeUsuarios:
+            if usuario['email'] == email:
+                flash('Email já cadastrado.')
+                return redirect('/loginrequisitante')
             
     user = [
         {   
