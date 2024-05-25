@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>                
+                <li class="btnlogin"><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="tipoCadastro">
+        <h1> Cadastro </h1>
+        <label for="selecionarTipoCadastro">Requisitante ou Operador?</label>
+        <select name="selecionarTipoCadastro" id="selecionarTipoCadastro">
+            <option value="Requisitante">Requisitante</option>
+            <option value="Operador">Operador</option>
+        </select>
+        <button type="submit">Continuar</button>
+    </form>
+
+    <form action="#" id="cadastrorequisitante"  method="post">
+        <h1>Cadastro Requisitante</h1>
+        <p id="msgErrorequisitante" >AS SENHAS NÃO SÃO IGUAIS!</p>
+        <label for="emailrequisitante">Email</label>
+        <input type="email" name="emailrequisitante" id="emailrequisitante">
+        <label for="nomerequisitante">Nome</label>
+        <input type="text" name="nomerequisitante" id="nomerequisitante">
+        <label for="senharequisitante">Senha</label>
+        <input type="password" name="senharequisitante" id="senharequisitante">
+        <label for="repetirsenharequisitante">Repetir senha</label>
+        <input type="password" name="repetirsenharequisitante" id="repetirsenharequisitante">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <form action="" id="cadastrooperador"  method="post">
+        <h1>Cadastro Operador</h1>
+        <p id="msgErrooperador" >AS SENHAS NÃO SÃO IGUAIS!</p>
+        <label for="emailoperador">Email</label>
+        <input type="email" name="emailoperador" id="emailoperador">
+        <label for="nomeoperador">Nome</label>
+        <input type="text" name="nomeoperador" id="nomeoperador">
+        <label for="senhaoperador">Senha</label>
+        <input type="password" name="senhaoperador" id="senhaoperador">
+        <label for="repetirsenhaoperador">Repetir senha</label>
+        <input type="password" name="repetirsenhaoperador" id="repetirsenhaoperador">
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+    <!-- <script src="/static/javascript/cadastro.js"></script> -->
+</body>
+</html>
