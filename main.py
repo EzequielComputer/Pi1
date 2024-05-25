@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = 'PI01'
 @app.route("/")
 def index():
 
-    return render_template('home.html')
+    return render_template('layout.html')
 
 
 
