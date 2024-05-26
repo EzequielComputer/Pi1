@@ -18,5 +18,10 @@
         "email": "lira@univesp",
         "nome": "Lira",
         "senha": "1234"
+    },
+    {
+        "email": "univesp@univesp.com",
+        "nome": "Univesp",
+        "senha": "1234"
     }
 ]
