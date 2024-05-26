@@ -34,6 +34,23 @@ def layout():
 
     return render_template('layout.html')
 
+
+@app.route('/chamados')
+def chamados():
+
+    return render_template('chamados.html')
+
+@app.route('/sair')
+def sair():
+
+    return render_template('index.html')
+
+@app.route('/relatorio')
+def relatorio():
+
+    return render_template('documentos.html')
+
+
 #verificação de usuário e senha para requisitante
 @app.route("/acessorequisitante", methods=['POST'])
 def acessorequisitante():
